@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
+import HomeCards from "./components/HomeCards.jsx";
 
 const App = () => {
 	const pageTitle = `Become a React Dev`;
@@ -10,6 +11,7 @@ const App = () => {
 		<>
 			<Navbar />
 			<Hero title={pageTitle} subtitle={pageSubtitle} />
+			<HomeCards />
 		</>
 	);
 };
