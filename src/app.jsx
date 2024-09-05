@@ -1,8 +1,18 @@
+import {
+	Route,
+	createBrowserRouter,
+	createRoutesFromElements,
+	RouterProvider,
+} from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Hero from "./components/Hero.jsx";
 import HomeCards from "./components/HomeCards.jsx";
 import JobListings from "./components/JobListings.jsx";
 import ViewAllJobs from "./components/ViewAllJobs.jsx";
+
+const router = createBrowserRouter(
+	createRoutesFromElements(<Route />)
+);
 
 const App = () => {
 	const pageTitle = `Become a React Dev`;
